@@ -1,8 +1,30 @@
 @charset "UTF-8";
 
+/*Estilos geral básico*/
 body {
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+header, main, aside, footer {
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
 }
 
 nav {
@@ -14,7 +36,7 @@ nav {
 }
 
 ul {
-    display: flex;
+   
     list-style: none;
     gap: 20px;
 }
@@ -23,4 +45,87 @@ a {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+/*Hambuguer*/
+.nav-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+.nav {
+    display: none;
+    width: 100%;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav ul li {
+    border-bottom: 1px solid #ddd;
+}
+.nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/*Media hambuguer*/
+@media (min-width: 768px) {
+    .nav-toggle {
+        display: none;
+    }
+    .nav {
+        display: block;
+    }
+    .nav ul li {
+        display: inline-block;
+        border-bottom: none;
+    }
+    .nav ul li a {
+        padding: 10px 15px;
+    }
+}
+
+/* Responsividade */
+/* Para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+/* Para desktops */
+@media (min-width: 1024px) {
+    header, nav, main, aside, footer {
+        max-width: 960px;
+        margin: auto;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    aside {
+        width: 30%;
+    }
+
+    section {
+        width: 65%;
+    }
+}
+
+/* Para telas grandes */
+@media (min-width: 1200px) {
+    header, nav, main, aside, footer {
+        max-width: 1140px;
+    }
 }

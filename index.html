@@ -5,19 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/estilo-geral.css">
     <link rel="shortcut icon" href="Imagens/favicon.png" type="image/x-icon">
+    
     <title>Inicio</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header> <!--Cabeçalho da página-->
+        <h1>Portal de Notícias</h1>
+        <div id="nav-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="nav"><!--Navegação da página-->
             <img src="Imagens/logo.png" alt="">
             <ul>
-                <li><a href="#">Casa</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">link01</a></li>
-                <li><a href="#">link02</a></li>
+                <li><a href="#home">Casa</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#nacionais">Nacionais</a></li>
+                <li><a href="#internacionais">Internacionais</a></li>
+                <li><a href="#economia">Economia</a></li>
+                <li><a href="#esportes">Esportes</a></li>
+                <li><a href="#entretenimento">Entretenimento</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section id="destaques">
+            <h2>Notícias em Destaque</h2>
+            <!-- Notícias em destaque aqui -->
+        </section>
+
+        <section id="nacionais">
+            <h2>Notícias Nacionais</h2>
+            <!-- Notícias nacionais aqui -->
+        </section>
+
+        <section id="internacionais">
+            <h2>Notícias Internacionais</h2>
+            <!-- Notícias internacionais aqui -->
+        </section>
+
+        <section id="economia">
+            <h2>Economia</h2>
+            <!-- Notícias de economia aqui -->
+        </section>
+
+        <section id="esportes">
+            <h2>Esportes</h2>
+            <!-- Notícias de esportes aqui -->
+        </section>
+
+        <section id="entretenimento">
+            <h2>Entretenimento</h2>
+            <!-- Notícias de entretenimento aqui -->
+        </section>
+    </main>
+
+    <aside>
+        <h3>Últimas Notícias</h3>
+        <!-- Widget ou feed de últimas notícias -->
+    </aside>
+
+    <footer>
+        <p> 2024 Portal de Notícias. Todos os direitos reservados.</p>
+        <!-- Informações adicionais como contato e links para redes sociais -->
+    </footer>
+
+    <script src="JavaScript/js-01.js"></script>
 </body>
 </html>
