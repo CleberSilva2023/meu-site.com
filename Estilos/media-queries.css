@@ -1,0 +1,18 @@
+
+@media screen and (max-width:768px) {
+    body {
+        width: 768px;
+    }
+    header {
+        width: 768px;
+    }
+    nav#painel {
+        width: 100%;
+        margin: 5px;
+    }
+    div.coluna {
+        width: 350px;
+        height: 350px
+    }
+
+};

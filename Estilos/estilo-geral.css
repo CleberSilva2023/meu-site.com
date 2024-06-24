@@ -16,8 +16,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #EB1F17,#4F0BEB);
-    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(to right, #EB1F17, #4F0BEB);
 }
 
 /*topo.do.site*/
@@ -150,6 +149,8 @@ footer {
     margin: auto;
 }
 footer > p {
+    font-size: 2em;
+    color: white;
     text-align: center;
     padding: 20px;
 }
