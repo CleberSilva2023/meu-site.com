@@ -1,131 +1,144 @@
 @charset "UTF-8";
 
-/*Estilos geral básico*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor01: #151F30;
+    --cor02: #103778;
+    --cor03: #0593A2;
+    --cor04: #FF7A48;
+    --cor05: #E3371E;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    background-image: linear-gradient(to right, #f00, #00f);
+    font-family: "Roboto", sans-serif;
 }
 
-header, main, aside, footer {
-    padding: 20px;
+/*topo.do.site*/
+header {
+    width: 780px;
+    margin: auto;
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-nav {
+form {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 15px 30px;
-    box-shadow: 2px 2px 10px black;
-}
-
-ul {
-   
-    list-style: none;
-    gap: 20px;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-/*Hambuguer*/
-.nav-toggle {
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-}
-.nav {
-    display: none;
     width: 100%;
 }
-.nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    padding: 25px;
 }
-.nav ul li {
-    border-bottom: 1px solid #ddd;
+
+p.tx01 {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    line-height: 1.5em;
 }
-.nav ul li a {
-    display: block;
+span {
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 20px;
+    color: #ff0000;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*Barra.de.pesquisa*/
+input#pesquisar {
+    width: 100%;
     padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 10px;
+}
+button#buscar {
+    background-image: linear-gradient(45deg, #151F30, #103778, #0593A2);
+    margin: 10px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button#buscar:hover {
+    background-image: linear-gradient(45deg, #151f3038, #103678d5, #0592a2);
+}
+/*Barra.de.pesquisa*/
+
+/*Painel.dos.PRODUTOS*/
+nav#painel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 780px;
+    background-color: white;
+    border-radius: 25px;
+    flex-wrap: wrap; /* Permite que as divs quebrem em linhas quando necessário */
+}
+/*Painel.dos.PRODUTOS*/
+
+/*DIV.DOS.PRODUTOS*/
+div.coluna {
+    width: 350px;
+    height: 350px;
+    background-color: rgba(30, 41, 59, 0.849);
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    flex: auto; /* Distribui o espaço disponível igualmente entre as colunas */
+}
+
+div.coluna > img {
+    object-fit: cover; /* Cobertura total da área */
+    object-position: top; /* Posicionamento topo */
+    border-radius: 25px 25px 0px 0px;
+    width: 100%;
+    height: 80%;
+    background-color: red;
+}
+
+div.coluna > p {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #ffffff;
+}
+
+div.coluna > p.link {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 11%;
+    border-radius: 0px 0px 25px 25px;
+    font-size: 35px;
+    background-image: linear-gradient(45deg, #151F30, #103778, #0593A2);
+}
+div.coluna > p > a {
+    color: white;
     text-decoration: none;
-    color: #333;
 }
-
-/*Media hambuguer*/
-@media (min-width: 768px) {
-    .nav-toggle {
-        display: none;
-    }
-    .nav {
-        display: block;
-    }
-    .nav ul li {
-        display: inline-block;
-        border-bottom: none;
-    }
-    .nav ul li a {
-        padding: 10px 15px;
-    }
+div.coluna > p.link:hover {
+    background-image: linear-gradient(to right, rgb(0, 0, 255), rgb(255, 0, 0));
+    cursor: pointer;
 }
-
-/* Responsividade */
-/* Para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 5px;
-    }
-}
-
-/* Para desktops */
-@media (min-width: 1024px) {
-    header, nav, main, aside, footer {
-        max-width: 960px;
-        margin: auto;
-    }
-
-    nav ul li {
-        display: inline;
-    }
-
-    main {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    aside {
-        width: 30%;
-    }
-
-    section {
-        width: 65%;
-    }
-}
-
-/* Para telas grandes */
-@media (min-width: 1200px) {
-    header, nav, main, aside, footer {
-        max-width: 1140px;
-    }
-}
+/*DIV.DOS.PRODUTOS*/
