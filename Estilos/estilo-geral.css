@@ -16,7 +16,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #f00, #00f);
+    background-image: linear-gradient(to right, #EB1F17,#4F0BEB);
     font-family: "Roboto", sans-serif;
 }
 
@@ -36,14 +36,14 @@ h1 {
     color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
-    font-size: 3em;
+    font-size: 5em;
     padding: 25px;
 }
 
 p.tx01 {
     font-family: "Roboto";
     font-weight: 400;
-    font-size: 20px;
+    font-size: 2em;
     color: white;
     padding: 20px;
     line-height: 1.5em;
@@ -51,7 +51,7 @@ p.tx01 {
 span {
     font-family: "Roboto";
     font-weight: 900;
-    font-size: 20px;
+    font-size: 1em;
     color: #ff0000;
     background-color: white;
     padding: 5px;
@@ -62,6 +62,7 @@ span {
 input#pesquisar {
     width: 100%;
     padding: 10px;
+    font-size: 2em;
     border: 1px solid #000;
     border-radius: 5px;
     margin: 10px;
@@ -69,6 +70,7 @@ input#pesquisar {
 button#buscar {
     background-image: linear-gradient(45deg, #151F30, #103778, #0593A2);
     margin: 10px;
+    font-size: 2em;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -98,7 +100,7 @@ div.coluna {
     width: 350px;
     height: 350px;
     background-color: rgba(30, 41, 59, 0.849);
-    margin: 10px;
+    margin: 20px 5px 20px 5px;
     border: 1px solid black;
     border-radius: 25px;
     flex: auto; /* Distribui o espaço disponível igualmente entre as colunas */
@@ -127,18 +129,27 @@ div.coluna > p {
 div.coluna > p.link {
     margin: 0px;
     padding: 0px;
+    font-size: 2em;
     width: 100%;
     height: 11%;
     border-radius: 0px 0px 25px 25px;
-    font-size: 35px;
     background-image: linear-gradient(45deg, #151F30, #103778, #0593A2);
-}
-div.coluna > p > a {
-    color: white;
-    text-decoration: none;
-}
-div.coluna > p.link:hover {
-    background-image: linear-gradient(to right, rgb(0, 0, 255), rgb(255, 0, 0));
     cursor: pointer;
 }
+a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
 /*DIV.DOS.PRODUTOS*/
+
+/*RODA-PÉ.DA.PÁGINA*/
+footer {
+    width: 780px;
+    height: 50px;
+    margin: auto;
+}
+footer > p {
+    text-align: center;
+    padding: 20px;
+}
