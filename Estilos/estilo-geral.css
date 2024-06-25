@@ -16,7 +16,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #EB1F17, #4F0BEB);
+    background-image: linear-gradient(to bottom, #EB1F17, #4F0BEB);
 }
 
 /*topo.do.site*/
@@ -101,6 +101,7 @@ div.coluna {
     background-color: rgba(30, 41, 59, 0.849);
     margin: 20px 5px 20px 5px;
     border: 1px solid black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
     border-radius: 25px;
     flex: auto; /* Distribui o espaço disponível igualmente entre as colunas */
 }
@@ -144,9 +145,11 @@ a {
 
 /*RODA-PÉ.DA.PÁGINA*/
 footer {
-    width: 780px;
-    height: 50px;
+    background-color: var(--cor01);
+    width: 100%;
+    height: 150px;
     margin: auto;
+    margin-top: 50px;
 }
 footer > p {
     font-size: 2em;
