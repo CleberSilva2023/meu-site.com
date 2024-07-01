@@ -16,7 +16,6 @@
 }
 
 body {
-    
     background-image: linear-gradient(to bottom, #EB1F17, #4F0BEB);
 }
 
@@ -98,7 +97,7 @@ nav#painel{
 /*DIV.DOS.PRODUTOS*/
 div.coluna {
     width: 350px;
-    height: 350px;
+    height: 450px;
     background-color: rgba(30, 41, 59, 0.849);
     margin: 20px 5px 20px 5px;
     border: 1px solid black;
@@ -109,15 +108,16 @@ div.coluna {
 
 div.coluna > img {
     object-fit: cover; /* Cobertura total da área */
-    object-position: top; /* Posicionamento topo */
+    object-position: center; /* Posicionamento centro */
     border-radius: 25px 25px 0px 0px;
     width: 100%;
-    height: 80%;
+    height: 350px;
     background-color: red;
 }
 
 div.coluna > p {
     width: 100%;
+    
     font-size: 15px;
     padding: 5px;
     text-align: center;
@@ -128,11 +128,14 @@ div.coluna > p {
 }
 
 div.coluna > p.link {
+    position: relative;
+    top: 20px;
+    bottom: 25px;
     margin: 0px;
     padding: 0px;
-    font-size: 2em;
+    font-size: 2.5em;
     width: 100%;
-    height: 11%;
+    height: 50px;
     border-radius: 0px 0px 25px 25px;
     background-image: linear-gradient(45deg, #151F30, #103778, #0593A2);
     cursor: pointer;

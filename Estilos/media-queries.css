@@ -6,13 +6,22 @@
     header {
         width: 100vw;
     }
+
+    h1 {
+        font-size: 3em;
+    }
+    p.tx01 {
+        font-size: 1em;
+    }
+   
+
     nav#painel {
         width: 100vw;
         margin: 5px;
     }
     div.coluna {
-        width: auto;
-        height: auto;
+        width: 350px;
+        height: 450;
     }
 
 };
