@@ -1,11 +1,13 @@
 
 @media screen and (max-width:770px) {
+    /*CORPO DO SITE*/
     body {
         width: 100vw;
     }
     header {
         width: 100vw;
     }
+    /*CORPO DO SITE*/
 
     h1 {
         font-size: 3em;
@@ -14,14 +16,31 @@
         font-size: 1em;
     }
    
-
-    nav#painel {
-        width: 100vw;
+    /*BARRA DE PESQUISA*/
+    form {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    input#pesquisar {
+        width: 100%;
+        padding: 5px;
+        font-size: 1.5em;
         margin: 5px;
     }
-    div.coluna {
-        width: 350px;
-        height: 450;
+    button#buscar {
+        margin: 5px;
+        font-size: 1.5em;
+        padding: 5px 10px;
     }
 
+    /*PAINEL DOS PRODUTOS*/
+    nav#painel{
+        display: grid;
+        width: 100vw;
+        grid-template-columns: repeat(2, 1fr); /* Divide em 2 colunas */
+    }
+    div.coluna {
+        width: auto;
+    }
 };
